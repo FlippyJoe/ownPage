@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="homeBody">
+    <nav>
+      <div class="logoContainer">
+        <img
+          src="./imgs/enso-symbol-e1548414161418.png"
+          alt="enso circle"
+          loading="lazy"
+          class="logoHead"
+        />
+      </div>
+      <label for="activeSidebar" class="menuBtn"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          class="menuBtn"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          /></svg
+      ></label>
+      <input type="checkbox" name="activeSidebar" id="activeSidebar" />
+      <section class="linksContainer">
+        <ul class="dropdown">
+          <li><a href="index.html" class="activePage">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="portfolioDD">
+            <button class="navBarBtn">Portfolio</button>
+            <ul class="content">
+              <li>
+                <a href="portfolio.html#analyticsStartPoint">Data Analytics</a>
+              </li>
+              <li>
+                <a href="portfolio.html#webDevStartPoint">Web Development</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- Main section -->
+    <section class="mainHome">
+      <h1 class="name">Jozsef Kohulak</h1>
+      <container class="imgContainer">
+        <img src="./imgs/FH.jpg" alt="profile pic" class="profilePic" />
+      </container>
+      <div class="divider">
+        <svg height="100" width="100%">
+          <path
+            d="M0 20 Q50 40 100 20 T200 20 T300 20 T400 20 T500 20 T600 20 T700 20 T800 20 T900 20 T1000 20 T1100 20 T 1200 20 T 1300 20 T1400 20 T1500 20 T1600 20"
+            fill="transparent"
+            stroke-width="2"
+            class="wavyDivider"
+          />
+        </svg>
+      </div>
+      <h2 class="developer">Frontend web developer</h2>
+      <p class="homeIntro">
+        Hi there! <br />
+        I'm Jozsef, a passionate and enthusiastic junior web developer with a
+        knack for creating visually appealing and user-friendly websites. With a
+        strong foundation in HTML and CSS, I love bringing ideas to life on the
+        web. <br />
+        <br />
+
+        In my portfolio, you'll find a collection of my projects that showcase
+        my skills in front-end development and responsive design. Whether it's a
+        sleek landing page or an interactive web app, I strive to deliver
+        high-quality work that meets the needs of users and clients alike.
+        <br />
+        <br />
+
+        Feel free to explore my projects, learn more about my journey, and get
+        in touch if you'd like to collaborate or just say hello. <br />
+        <br />
+        Let's build something amazing together!
+      </p>
+    </section>
+    <footer>Powered by &copy <a href="flipthedata.net">Flippy</a>, 2025</footer>
+  </body>
+</html>

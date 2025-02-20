@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="portfolioBody">
+    <nav>
+      <div class="logoContainer">
+        <img
+          src="./imgs/enso-symbol-e1548414161418.png"
+          alt="enso circle"
+          loading="lazy"
+          class="logoHead"
+        />
+      </div>
+      <label for="activeSidebar" class="menuBtn"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          class="menuBtn"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          /></svg
+      ></label>
+      <input type="checkbox" name="activeSidebar" id="activeSidebar" />
+      <section class="linksContainer">
+        <ul class="dropdown">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="portfolioDD">
+            <button class="navBarBtn activePage">Portfolio</button>
+            <ul class="content">
+              <li><a href="#analyticsStartPoint">Data Analytics</a></li>
+              <li><a href="#webDevStartPoint">Web Development</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- Portfolio Main section -->
+    <main class="portfolioMain">
+      <section class="analytics" id="analyticsStartPoint">
+        <div class="britishAir">
+          <h2 class="powerBiHeader">Power BI report- British Airways</h2>
+          <a
+            href="https://app.fabric.microsoft.com/view?r=eyJrIjoiNThmODZhYWQtYWNkYi00ZjQ0LWFlMGUtZGE0ZjJjMmUzZTg2IiwidCI6IjE2ZjY2OTNiLTIzNjUtNDJmNC1hZjg1LTc1N2I4NjVhM2I4NSIsImMiOjl9&pageName=ReportSection"
+            target="_blank"
+            ><img
+              src="./imgs/airplane.jpg"
+              alt="airbus380"
+              loading="lazy"
+              class="airplanePic"
+          /></a>
+
+          <p class="powerBiTxt">
+            One of my first Power BI analysis, performed for practice purposes.
+            <br />
+            The aim of the analsis is to show the most preferred destination
+            countries by day of the week and time of the day. Utilizing
+            techniques such as drill down function, tooltips, the viewer can get
+            detailed information of the travellers`s behaviour by departure and
+            destination country thoughout the year.
+          </p>
+        </div>
+        <div class="inventoryXcel">
+          <h2 class="inventoryHeader">MS Excel report- Inventory Management</h2>
+          <a
+            href="https://flipthedata-my.sharepoint.com/:x:/g/personal/jkohulak_flipthedata_onmicrosoft_com/EbYI9PQ5pwpAt2KEtLdYnlEBUNg1SRsp4DiQ7X4VVlvMig?e=H9v9E7"
+            target="_blank"
+            ><img
+              src="./imgs/inventory.jpeg"
+              alt="airbus380"
+              loading="lazy"
+              class="airplanePic"
+          /></a>
+
+          <p class="powerBiTxt">
+            Working in retail sales inspired me to create a sheet that helps to
+            predict the expectable quantity of expiring products and plan the
+            future orders accordingly. The calculations include economic order
+            quantity, minimum order quantity and average daily sales of the
+            products. To succesfully apply ABC analysis the products are broken
+            down into categories and sub-categories.
+          </p>
+        </div>
+        <div class="maven">
+          <h2 class="powerBiHeader">
+            Power BI report- Maven Analytics Challenge
+          </h2>
+          <a
+            href="https://app.fabric.microsoft.com/view?r=eyJrIjoiMzEzOGY2NmItMmQyNC00ODkyLTllY2QtODNmZmFiNTAxNWVhIiwidCI6IjE2ZjY2OTNiLTIzNjUtNDJmNC1hZjg1LTc1N2I4NjVhM2I4NSIsImMiOjl9"
+            target="_blank"
+            ><img
+              src="./imgs/mavenPic.jpeg"
+              alt="airbus380"
+              loading="lazy"
+              class="airplanePic"
+          /></a>
+          <p class="powerBiTxt">
+            I created this report as my entry for the Maven Analytics Viz
+            Challenge in 2023. The report shows in details the performance of
+            sales teams, their managers and the individual sales executives.
+          </p>
+        </div>
+      </section>
+      <section class="webDev" id="webDevStartPoint">
+        <div class="magician">
+          <h2 class="magicianHeader">Web page: The Magician</h2>
+          <a href="https://flippyjoe.github.io/magician/" target="_blank"
+            ><img
+              src="./imgs/magicScreenShot.jpeg"
+              alt="wizard"
+              loading="lazy"
+              class="wizard"
+          /></a>
+
+          <p class="magicianText">
+            Dummy web page of an illusionist, who is visiting hospitality <br />
+            establishments to entertain the guests by the table with <br />
+            his magical tricks. <br />
+          </p>
+        </div>
+        <div class="barber">
+          <h2 class="barberHeader">Web page: The Barber Shop</h2>
+          <a href="https://flippyjoe.github.io/barber/" target="_blank"
+            ><img
+              src="./imgs/barberScreenShot.jpeg"
+              alt="barber"
+              loading="lazy"
+              class="barberPic"
+          /></a>
+          <p class="barberText">
+            Dummy web page of a barber shop. which is offering various services
+            to its customers. <br />
+            As the web page is relatively simple I compressed it into a single
+            page with different sections. <br />
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>Powered by &copy <a href="flipthedata.net">Flippy</a>, 2025</footer>
+  </body>
+</html>

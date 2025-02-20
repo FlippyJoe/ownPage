@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+  </head>
+  <body class="contactBody">
+    <nav>
+      <div class="logoContainer">
+        <img
+          src="./imgs/enso-symbol-e1548414161418.png"
+          alt="enso circle"
+          loading="lazy"
+          class="logoHead"
+        />
+      </div>
+      <label for="activeSidebar" class="menuBtn"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          class="menuBtn"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          /></svg
+      ></label>
+      <input type="checkbox" name="activeSidebar" id="activeSidebar" />
+      <section class="linksContainer">
+        <ul class="dropdown">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="portfolioDD">
+            <button class="navBarBtn">Portfolio</button>
+            <ul class="content">
+              <li>
+                <a href="portfolio.html#analyticsStartPoint">Data Analytics</a>
+              </li>
+              <li>
+                <a href="portfolio.html#webDevStartPoint">Web Development</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="activePage">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    <section class="mainContact">
+      <h1 class="contactHead">
+        Contact me for more details, or just for a chat
+      </h1>
+      <section class="socialMedia">
+        <a
+          href="https://www.linkedin.com/in/jozsef-kohulak-assoc-cipd-401039155/"
+          class="fa fa-linkedin"
+          target="_blank"
+        ></a>
+        <a href="mailto:jkohulak@flipthedata.onmicrosoft.com">Email me</a>
+      </section>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contactForm"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="32fc005e-83e5-481d-b5b5-1f9235143a65"
+        />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://flippyjoe.github.io/ownPage/thanks.html"
+        />
+        <!--Change this when upload-->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+        <div class="h-captcha" data-captcha="true"></div>
+        <input type="hidden" name="from_name" value="From Flippy web page" />
+        <div class="name">
+          <input
+            type="text"
+            name="name"
+            id="nameContact"
+            required
+            placeholder="Your name"
+          />
+        </div>
+        <div class="email">
+          <input
+            type="email"
+            name="email"
+            id="emailContact"
+            placeholder="Email"
+          />
+        </div>
+        <div class="subject">
+          <input
+            type="text"
+            name="subject"
+            id="subjectContact"
+            placeholder="Subject"
+          />
+        </div>
+        <div class="message">
+          <textarea
+            name="message"
+            id="messageContact"
+            minlength="30"
+            placeholder="Enter your minimum 30 characters long message here..."
+          ></textarea>
+        </div>
+        <button type="submit" class="submitBtn">Send</button>
+      </form>
+    </section>
+    <footer>Powered by &copy <a href="flipthedata.net">Flippy</a>, 2025</footer>
+  </body>
+</html>
